@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ComputerStandart">
+    <Key>
+      <PropertyRef Name="computerstandart_id" />
+    </Key>
+    <Property Name="computerstandart_id" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="computerstandart_datetime" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="ComputerVIP">
+    <Key>
+      <PropertyRef Name="computervip_id" />
+    </Key>
+    <Property Name="computervip_id" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="computervip_datetime" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="employee_id" />
+    </Key>
+    <Property Name="employee_id" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="employee_name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="employee_surname" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="employee_patronymic" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="employee_phone" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="employee_login" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="employee_password" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="employee_authorization" Type="Boolean" />
+    <Property Name="employee_role" Type="Int32" />
+    <NavigationProperty Name="EmployeeRole" Relationship="Self.FK__Employee__employ__4BAC3F29" FromRole="Employee" ToRole="EmployeeRole" />
+    <NavigationProperty Name="Report" Relationship="Self.FK__Report__report_e__5070F446" FromRole="Employee" ToRole="Report" />
+  </EntityType>
+  <EntityType Name="EmployeeRole">
+    <Key>
+      <PropertyRef Name="employeerole_id" />
+    </Key>
+    <Property Name="employeerole_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="employeerole_name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Employee" Relationship="Self.FK__Employee__employ__4BAC3F29" FromRole="EmployeeRole" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="Games">
+    <Key>
+      <PropertyRef Name="game_id" />
+    </Key>
+    <Property Name="game_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="game_name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="game_photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="game_photopath" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="order_id" />
+    </Key>
+    <Property Name="order_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="order_totalmoney" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="order_paymentmethod" Type="Int32" />
+    <NavigationProperty Name="PaymentMethod" Relationship="Self.FK__Order__order_pay__4CA06362" FromRole="Order" ToRole="PaymentMethod" />
+    <NavigationProperty Name="OrderProduct" Relationship="Self.FK__OrderProd__order__4D94879B" FromRole="Order" ToRole="OrderProduct" />
+  </EntityType>
+  <EntityType Name="OrderProduct">
+    <Key>
+      <PropertyRef Name="orderproduct_id" />
+    </Key>
+    <Property Name="orderproduct_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="orderproduct_order" Type="Int32" />
+    <Property Name="orderproduct_product" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="orderproduct_quantity" Type="Int32" Nullable="false" />
+    <Property Name="orderproduct_totalmoney" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <NavigationProperty Name="Order" Relationship="Self.FK__OrderProd__order__4D94879B" FromRole="OrderProduct" ToRole="Order" />
+    <NavigationProperty Name="Product" Relationship="Self.FK__OrderProd__order__4E88ABD4" FromRole="OrderProduct" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="PaymentMethod">
+    <Key>
+      <PropertyRef Name="paymentmethod_id" />
+    </Key>
+    <Property Name="paymentmethod_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="paymentmethod_name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Order" Relationship="Self.FK__Order__order_pay__4CA06362" FromRole="PaymentMethod" ToRole="Order" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="product_id" />
+    </Key>
+    <Property Name="product_id" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="product_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="product_quantityinstock" Type="Int32" Nullable="false" />
+    <Property Name="product_price" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="product_producttype" Type="Int32" />
+    <Property Name="product_photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="product_photopath" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="product_sellthisworkshift" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="OrderProduct" Relationship="Self.FK__OrderProd__order__4E88ABD4" FromRole="Product" ToRole="OrderProduct" />
+    <NavigationProperty Name="ProductType" Relationship="Self.FK__Product__product__4F7CD00D" FromRole="Product" ToRole="ProductType" />
+  </EntityType>
+  <EntityType Name="ProductType">
+    <Key>
+      <PropertyRef Name="producttype_id" />
+    </Key>
+    <Property Name="producttype_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="producttype_name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="Self.FK__Product__product__4F7CD00D" FromRole="ProductType" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Report">
+    <Key>
+      <PropertyRef Name="report_id" />
+    </Key>
+    <Property Name="report_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="report_datetimeopening" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="report_datetimeclosure" Type="DateTime" Precision="3" />
+    <Property Name="report_workingtime" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="report_employee" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="report_totalmoney" Type="Int32" />
+    <NavigationProperty Name="Employee" Relationship="Self.FK__Report__report_e__5070F446" FromRole="Report" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="user_id" />
+    </Key>
+    <Property Name="user_id" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="user_money" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="user_name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="user_surname" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="user_phone" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="user_birthday" Type="DateTime" Precision="0" />
+  </EntityType>
+  <Association Name="FK__Employee__employ__4BAC3F29">
+    <End Role="EmployeeRole" Type="Self.EmployeeRole" Multiplicity="0..1" />
+    <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmployeeRole">
+        <PropertyRef Name="employeerole_id" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="employee_role" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Report__report_e__5070F446">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+    <End Role="Report" Type="Self.Report" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="employee_id" />
+      </Principal>
+      <Dependent Role="Report">
+        <PropertyRef Name="report_employee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Order__order_pay__4CA06362">
+    <End Role="PaymentMethod" Type="Self.PaymentMethod" Multiplicity="0..1" />
+    <End Role="Order" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaymentMethod">
+        <PropertyRef Name="paymentmethod_id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="order_paymentmethod" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrderProd__order__4D94879B">
+    <End Role="Order" Type="Self.Order" Multiplicity="0..1" />
+    <End Role="OrderProduct" Type="Self.OrderProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="order_id" />
+      </Principal>
+      <Dependent Role="OrderProduct">
+        <PropertyRef Name="orderproduct_order" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrderProd__order__4E88ABD4">
+    <End Role="Product" Type="Self.Product" Multiplicity="0..1" />
+    <End Role="OrderProduct" Type="Self.OrderProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="product_id" />
+      </Principal>
+      <Dependent Role="OrderProduct">
+        <PropertyRef Name="orderproduct_product" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Product__product__4F7CD00D">
+    <End Role="ProductType" Type="Self.ProductType" Multiplicity="0..1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductType">
+        <PropertyRef Name="producttype_id" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="product_producttype" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="pc_clubEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ComputerStandart" EntityType="Self.ComputerStandart" />
+    <EntitySet Name="ComputerVIP" EntityType="Self.ComputerVIP" />
+    <EntitySet Name="Employee" EntityType="Self.Employee" />
+    <EntitySet Name="EmployeeRole" EntityType="Self.EmployeeRole" />
+    <EntitySet Name="Games" EntityType="Self.Games" />
+    <EntitySet Name="Order" EntityType="Self.Order" />
+    <EntitySet Name="OrderProduct" EntityType="Self.OrderProduct" />
+    <EntitySet Name="PaymentMethod" EntityType="Self.PaymentMethod" />
+    <EntitySet Name="Product" EntityType="Self.Product" />
+    <EntitySet Name="ProductType" EntityType="Self.ProductType" />
+    <EntitySet Name="Report" EntityType="Self.Report" />
+    <EntitySet Name="User" EntityType="Self.User" />
+    <AssociationSet Name="FK__Employee__employ__4BAC3F29" Association="Self.FK__Employee__employ__4BAC3F29">
+      <End Role="EmployeeRole" EntitySet="EmployeeRole" />
+      <End Role="Employee" EntitySet="Employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Report__report_e__5070F446" Association="Self.FK__Report__report_e__5070F446">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="Report" EntitySet="Report" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Order__order_pay__4CA06362" Association="Self.FK__Order__order_pay__4CA06362">
+      <End Role="PaymentMethod" EntitySet="PaymentMethod" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrderProd__order__4D94879B" Association="Self.FK__OrderProd__order__4D94879B">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="OrderProduct" EntitySet="OrderProduct" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrderProd__order__4E88ABD4" Association="Self.FK__OrderProd__order__4E88ABD4">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="OrderProduct" EntitySet="OrderProduct" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Product__product__4F7CD00D" Association="Self.FK__Product__product__4F7CD00D">
+      <End Role="ProductType" EntitySet="ProductType" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

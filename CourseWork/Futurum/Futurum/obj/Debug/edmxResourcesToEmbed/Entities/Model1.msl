@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище ModelContainer" CdmEntityContainer="pc_clubEntities">
+    <EntitySetMapping Name="ComputerStandart">
+      <EntityTypeMapping TypeName="Model.ComputerStandart">
+        <MappingFragment StoreEntitySet="ComputerStandart">
+          <ScalarProperty Name="computerstandart_id" ColumnName="computerstandart_id" />
+          <ScalarProperty Name="computerstandart_datetime" ColumnName="computerstandart_datetime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ComputerVIP">
+      <EntityTypeMapping TypeName="Model.ComputerVIP">
+        <MappingFragment StoreEntitySet="ComputerVIP">
+          <ScalarProperty Name="computervip_id" ColumnName="computervip_id" />
+          <ScalarProperty Name="computervip_datetime" ColumnName="computervip_datetime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employee">
+      <EntityTypeMapping TypeName="Model.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="employee_id" ColumnName="employee_id" />
+          <ScalarProperty Name="employee_name" ColumnName="employee_name" />
+          <ScalarProperty Name="employee_surname" ColumnName="employee_surname" />
+          <ScalarProperty Name="employee_patronymic" ColumnName="employee_patronymic" />
+          <ScalarProperty Name="employee_phone" ColumnName="employee_phone" />
+          <ScalarProperty Name="employee_login" ColumnName="employee_login" />
+          <ScalarProperty Name="employee_password" ColumnName="employee_password" />
+          <ScalarProperty Name="employee_authorization" ColumnName="employee_authorization" />
+          <ScalarProperty Name="employee_role" ColumnName="employee_role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmployeeRole">
+      <EntityTypeMapping TypeName="Model.EmployeeRole">
+        <MappingFragment StoreEntitySet="EmployeeRole">
+          <ScalarProperty Name="employeerole_id" ColumnName="employeerole_id" />
+          <ScalarProperty Name="employeerole_name" ColumnName="employeerole_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Games">
+      <EntityTypeMapping TypeName="Model.Games">
+        <MappingFragment StoreEntitySet="Games">
+          <ScalarProperty Name="game_id" ColumnName="game_id" />
+          <ScalarProperty Name="game_name" ColumnName="game_name" />
+          <ScalarProperty Name="game_photo" ColumnName="game_photo" />
+          <ScalarProperty Name="game_photopath" ColumnName="game_photopath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Order">
+      <EntityTypeMapping TypeName="Model.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+          <ScalarProperty Name="order_totalmoney" ColumnName="order_totalmoney" />
+          <ScalarProperty Name="order_paymentmethod" ColumnName="order_paymentmethod" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderProduct">
+      <EntityTypeMapping TypeName="Model.OrderProduct">
+        <MappingFragment StoreEntitySet="OrderProduct">
+          <ScalarProperty Name="orderproduct_id" ColumnName="orderproduct_id" />
+          <ScalarProperty Name="orderproduct_order" ColumnName="orderproduct_order" />
+          <ScalarProperty Name="orderproduct_product" ColumnName="orderproduct_product" />
+          <ScalarProperty Name="orderproduct_quantity" ColumnName="orderproduct_quantity" />
+          <ScalarProperty Name="orderproduct_totalmoney" ColumnName="orderproduct_totalmoney" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentMethod">
+      <EntityTypeMapping TypeName="Model.PaymentMethod">
+        <MappingFragment StoreEntitySet="PaymentMethod">
+          <ScalarProperty Name="paymentmethod_id" ColumnName="paymentmethod_id" />
+          <ScalarProperty Name="paymentmethod_name" ColumnName="paymentmethod_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product">
+      <EntityTypeMapping TypeName="Model.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="product_name" ColumnName="product_name" />
+          <ScalarProperty Name="product_quantityinstock" ColumnName="product_quantityinstock" />
+          <ScalarProperty Name="product_price" ColumnName="product_price" />
+          <ScalarProperty Name="product_producttype" ColumnName="product_producttype" />
+          <ScalarProperty Name="product_photo" ColumnName="product_photo" />
+          <ScalarProperty Name="product_photopath" ColumnName="product_photopath" />
+          <ScalarProperty Name="product_sellthisworkshift" ColumnName="product_sellthisworkshift" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductType">
+      <EntityTypeMapping TypeName="Model.ProductType">
+        <MappingFragment StoreEntitySet="ProductType">
+          <ScalarProperty Name="producttype_id" ColumnName="producttype_id" />
+          <ScalarProperty Name="producttype_name" ColumnName="producttype_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Report">
+      <EntityTypeMapping TypeName="Model.Report">
+        <MappingFragment StoreEntitySet="Report">
+          <ScalarProperty Name="report_id" ColumnName="report_id" />
+          <ScalarProperty Name="report_datetimeopening" ColumnName="report_datetimeopening" />
+          <ScalarProperty Name="report_datetimeclosure" ColumnName="report_datetimeclosure" />
+          <ScalarProperty Name="report_workingtime" ColumnName="report_workingtime" />
+          <ScalarProperty Name="report_employee" ColumnName="report_employee" />
+          <ScalarProperty Name="report_totalmoney" ColumnName="report_totalmoney" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="Model.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_money" ColumnName="user_money" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="user_surname" ColumnName="user_surname" />
+          <ScalarProperty Name="user_phone" ColumnName="user_phone" />
+          <ScalarProperty Name="user_birthday" ColumnName="user_birthday" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

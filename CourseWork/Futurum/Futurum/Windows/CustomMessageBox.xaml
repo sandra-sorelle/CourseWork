@@ -1,0 +1,83 @@
+﻿<Window x:Class="Futurum.Windows.CustomMessageBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="CustomMessageBox" Height="220" Width="500" 
+        WindowStartupLocation="CenterScreen" WindowStyle="None" Background="#17164D"
+        BorderBrush="#FA45C3"
+        BorderThickness="2"
+        ResizeMode="NoResize" Topmost="True" ShowInTaskbar="False"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="10"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"        
+        FontFamily="Montserrat Alternates">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="197*"/>
+            <ColumnDefinition Width="295*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+        <Border x:Name="cardHeader" Grid.Row="0"  Margin="0" Background="#FA45C3"  Visibility="Visible" Grid.ColumnSpan="2">
+            <StackPanel VerticalAlignment="Center">
+                <TextBlock FontWeight="Bold" Foreground="#FFD0EA" x:Name="txtTitle" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" >Заголовок</TextBlock>
+            </StackPanel>
+        </Border>
+        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Column="1">
+            <Button x:Name="btnClose" Click="btnClose_Click" Width="35" Height="35" Background="White" Foreground="#FFD0EA" Style="{StaticResource MaterialDesignToolButton}">
+                <materialDesign:PackIcon Kind="Close" VerticalAlignment="Center" HorizontalAlignment="Center" Width="35" Height="35"/>
+            </Button>
+        </StackPanel>
+        <Grid Grid.Row="1" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="27*"/>
+                <ColumnDefinition Width="473*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Margin="20,20,20,20" Grid.ColumnSpan="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBox BorderThickness="0" materialDesign:TextFieldAssist.DecorationVisibility="Collapsed" Foreground="#FFD0EA" x:Name="txtMessage" HorizontalAlignment="Center" IsReadOnly="True" Grid.Row="0" Margin="5" FontSize="18" />
+
+                </Grid>
+                <Grid Grid.Row="1" Margin="0,20,0,5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Border x:Name="BorderYes" Margin="0 0 35 0" CornerRadius="15" Background="#F614C2" Grid.Column="1" Width="140" Height="30" VerticalAlignment="Center" UseLayoutRounding="True">
+                        <Button Height="30" Foreground="#FFD0EA" FontWeight="Bold" x:Name="btnYes" Click="btnYes_Click" Width="140" Content="OK" ToolTip="Ok" Background="Transparent" BorderBrush="Transparent"/>
+                    </Border>
+
+                    <Border x:Name="BorderOk" Margin="0 0 35 0" CornerRadius="15" Background="#F614C2" Grid.Column="1" Width="140" Height="30" VerticalAlignment="Center" UseLayoutRounding="True">
+                        <Button Height="30" Foreground="#FFD0EA" FontWeight="Bold" x:Name="btnOk" Click="btnOk_Click" Width="140" Content="OK" ToolTip="Ok" Background="Transparent" BorderBrush="Transparent"/>
+                    </Border>
+                    <Border x:Name="BorderNo" CornerRadius="15" Background="#E0CCD7" Grid.Column="2" Width="140" Height="30" VerticalAlignment="Center" UseLayoutRounding="True">
+                        <Button Height="30" Foreground="#F614C2" x:Name="btnNo" FontWeight="Bold" Click="btnNo_Click" Grid.Column="2" Width="140" Content="Закрыть" ToolTip="Cancel" Background="Transparent" BorderBrush="Transparent"/>
+                    </Border>
+                    <Border x:Name="BorderCancel" CornerRadius="15" Background="#E0CCD7" Grid.Column="2" Width="140" Height="30" VerticalAlignment="Center" UseLayoutRounding="True">
+                        <Button Height="30" Foreground="#F614C2" x:Name="btnCancel" FontWeight="Bold" Click="btnCancel_Click" Grid.Column="2" Width="140" Content="Закрыть" ToolTip="Cancel" Background="Transparent" BorderBrush="Transparent"/>
+                    </Border>
+                </Grid>
+
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

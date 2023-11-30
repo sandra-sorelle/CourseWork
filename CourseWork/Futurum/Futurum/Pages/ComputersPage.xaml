@@ -1,0 +1,74 @@
+﻿<Page x:Class = "Futurum.Pages.ComputersPage"
+      xmlns:materialDesign = "http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns = "http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x = "http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc = "http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d = "http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local = "clr-namespace:Futurum.Pages"
+      mc:Ignorable = "d" 
+      d:DesignHeight = "450" d:DesignWidth = "800"
+      Title = "ComputersPage"
+      FontFamily = "Montserrat Alternates"
+      Loaded = "Page_Loaded">
+
+    <Grid>
+        <DockPanel Margin = "50 0" ScrollViewer.VerticalScrollBarVisibility = "Visible" Width = "800" HorizontalAlignment = "Center" Height = "auto" >
+            <StackPanel HorizontalAlignment = "Center" VerticalAlignment = "Center" Orientation = "Horizontal">
+                <StackPanel Margin = "0 0 200 0">
+                    <TextBlock HorizontalAlignment = "Center" Text = "ЗАЛ 'СТАНДАРТ'" FontSize = "14" Foreground = "#FA45C3" Margin = "0 0 0 20"/>
+                    <ListView Width = "140" x:Name = "ComputersStandartListView" HorizontalAlignment = "Left" FontSize = "12" ScrollViewer.VerticalScrollBarVisibility = "Hidden" SelectionChanged = "ComputersStandartListView_SelectionChanged">
+                        <ListView.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel VerticalAlignment = "Center" HorizontalAlignment = "Center" Width = "140" Orientation = "Horizontal"/>
+                            </ItemsPanelTemplate>
+                        </ListView.ItemsPanel>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Margin = "5">
+                                    <TextBlock Text = "{Binding computerstandart_id}" Foreground = "#FFD0EA" HorizontalAlignment = "Center" FontSize = "12"/>
+                                    <Border Background = "#E0CCD7" CornerRadius = "20" Width = "40" Height = "40">
+                                        <materialDesign:PackIcon HorizontalAlignment = "Center" Kind = "Computer" Width = "25" Height = "25" VerticalAlignment = "Center"/>
+                                    </Border>
+                                    <ProgressBar x:Name = "ProgressBarStandart" Width = "40" Margin = "0 5 0 0" Background = "#E0CCD7"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                        <ListView.ContextMenu>
+                            <ContextMenu Background = "#11103A" Foreground = "#E0CCD7">
+                                <MenuItem Header = "Добавить время" x:Name = "TimeStd" Click = "TimeStd_Click"/>
+                                <MenuItem Header = "Добавить время с баланса" x:Name = "TimeStdBalance" Click = "TimeStdBalance_Click"/>
+                            </ContextMenu>
+                        </ListView.ContextMenu>
+                    </ListView>
+                </StackPanel>
+                <StackPanel>
+                    <TextBlock HorizontalAlignment = "Center" Text = "ЗАЛ 'ВИП'" FontSize = "14" Foreground = "#FA45C3" Margin = "0 0 0 20"/>
+                    <ListView Width = "140" x:Name = "ComputersVIPListView" SelectionChanged = "ComputersVIPListView_SelectionChanged" HorizontalAlignment = "Left" FontSize  =  "12" ScrollViewer.VerticalScrollBarVisibility = "Hidden">
+                        <ListView.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel VerticalAlignment = "Center" HorizontalAlignment = "Center" Width = "140"/>
+                            </ItemsPanelTemplate>
+                        </ListView.ItemsPanel>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Margin = "5">
+                                    <TextBlock Text = "{Binding computervip_id}" Foreground = "#FFD0EA" HorizontalAlignment = "Center" FontSize = "12"/>
+                                    <Border Background = "#E0CCD7" CornerRadius = "20" Width = "40" Height = "40">
+                                        <materialDesign:PackIcon HorizontalAlignment = "Center" Kind = "Computer" Width = "25" Height = "25" VerticalAlignment = "Center"/>
+                                    </Border>
+                                    <ProgressBar x:Name = "ProgressBarVIP" Width = "40" Margin = "0 5 0 0" Background = "#E0CCD7"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                        <ListView.ContextMenu>
+                            <ContextMenu Background = "#11103A" Foreground = "#E0CCD7">
+                                <MenuItem Header = "Добавить время" x:Name = "TimeVIP" Click = "TimeVIP_Click"/>
+                                <MenuItem Header = "Добавить время с баланса" x:Name = "TimeVIPBalance" Click = "TimeVIPBalance_Click"/>
+                            </ContextMenu>
+                        </ListView.ContextMenu>
+                    </ListView>
+                </StackPanel>
+            </StackPanel>
+        </DockPanel>
+    </Grid>
+</Page>

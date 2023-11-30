@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Futurum", "Futurum\Futurum.csproj", "{D42B72E9-AA15-4577-ACAB-A9C1BDC46912}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{416A3D7D-14B3-42A3-BE9E-8D1E3284C1C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D42B72E9-AA15-4577-ACAB-A9C1BDC46912}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D42B72E9-AA15-4577-ACAB-A9C1BDC46912}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D42B72E9-AA15-4577-ACAB-A9C1BDC46912}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D42B72E9-AA15-4577-ACAB-A9C1BDC46912}.Release|Any CPU.Build.0 = Release|Any CPU
+		{416A3D7D-14B3-42A3-BE9E-8D1E3284C1C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{416A3D7D-14B3-42A3-BE9E-8D1E3284C1C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{416A3D7D-14B3-42A3-BE9E-8D1E3284C1C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{416A3D7D-14B3-42A3-BE9E-8D1E3284C1C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {899DBDC6-034F-4E9B-B334-E3CDBD6FEE6F}
+	EndGlobalSection
+EndGlobal

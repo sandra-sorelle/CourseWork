@@ -1,0 +1,64 @@
+﻿<Page x:Class="Futurum.Pages.EditEmployeePage"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Futurum.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="EditEmployeePage"
+      Loaded="Page_Loaded"
+      FontFamily="Montserrat Alternates">
+
+    <Grid>
+        <StackPanel VerticalAlignment = "Center" HorizontalAlignment = "Center">
+            <StackPanel Orientation = "Horizontal">
+                <StackPanel>
+                    <TextBlock Text = "Номер сотрудника" Margin="5" Height = "25" Foreground="#F614C2"/>
+                    <TextBlock Text = "Имя" Margin="5" Height = "25" Foreground="#F614C2"/>
+                    <TextBlock Text = "Фамилия" Margin="5" Height = "25" Foreground="#F614C2"/>
+                    <TextBlock Text = "Отчество" Margin="5" Height = "25" Foreground="#F614C2"/>
+                </StackPanel>
+                <StackPanel Margin = "10 0 0 0">
+                    <Border Height="25" CornerRadius="12" Background="#FCD6FD" BorderThickness="0" Width="180" VerticalAlignment="Center" UseLayoutRounding="True" Margin="5">
+                        <TextBox x:Name="TextBoxEmployeeNumber" PreviewTextInput="TextBoxEmployeeNumber_PreviewTextInput" BorderThickness="0" materialDesign:TextFieldAssist.DecorationVisibility="Collapsed" Width="160" Height = "25" Text = "{Binding employee_id}"/>
+                    </Border>
+                    <Border Height="25" CornerRadius="12" Background="#FCD6FD" BorderThickness="0" Width="180" VerticalAlignment="Center" UseLayoutRounding="True" Margin="5">
+                        <TextBox x:Name="TextBoxName" PreviewTextInput="TextBoxName_PreviewTextInput" BorderThickness="0" materialDesign:TextFieldAssist.DecorationVisibility="Collapsed" Width="160" Height = "25" Text = "{Binding employee_name}"/>
+                    </Border>
+                    <Border Height="25" CornerRadius="12" Background="#FCD6FD" BorderThickness="0" Width="180" VerticalAlignment="Center" UseLayoutRounding="True" Margin="5">
+                        <TextBox x:Name="TextBoxSurname" PreviewTextInput="TextBoxSurname_PreviewTextInput" BorderThickness="0" materialDesign:TextFieldAssist.DecorationVisibility="Collapsed" Width="160" Height = "25" Text = "{Binding employee_surname}"/>
+                    </Border>
+                    <Border Height="25" CornerRadius="12" Background="#FCD6FD" BorderThickness="0" Width="180" VerticalAlignment="Center" UseLayoutRounding="True" Margin="5">
+                        <TextBox x:Name="TextBoxPatronymic" PreviewTextInput="TextBoxPatronymic_PreviewTextInput" BorderThickness="0" materialDesign:TextFieldAssist.DecorationVisibility="Collapsed" Width="160" Height = "25" Text = "{Binding employee_patronymic}"/>
+                    </Border>
+                </StackPanel>
+                <StackPanel>
+                    <TextBlock Text = "Номер телефона" Margin="5" Height = "25" Foreground="#F614C2"/>
+                    <TextBlock Text = "Логин" Margin="5" Height = "25" Foreground="#F614C2"/>
+                    <TextBlock Text = "Пароль" Margin="5" Height = "25" Foreground="#F614C2"/>
+                </StackPanel>
+                <StackPanel Margin = "10 0 0 0">
+                    <Border Height="25" CornerRadius="12" Background="#FCD6FD" BorderThickness="0" Width="180" VerticalAlignment="Center" UseLayoutRounding="True" Margin="5">
+                        <TextBox PreviewTextInput="TextBoxPhone_PreviewTextInput" x:Name="TextBoxPhone" BorderThickness="0" materialDesign:TextFieldAssist.DecorationVisibility="Collapsed" Width="160" Height = "25" Text = "{Binding employee_phone}"/>
+                    </Border>
+                    <Border Height="25" CornerRadius="12" Background="#FCD6FD" BorderThickness="0" Width="180" VerticalAlignment="Center" UseLayoutRounding="True" Margin="5">
+                        <TextBox x:Name="TextBoxLogin" PreviewTextInput="TextBoxLogin_PreviewTextInput" BorderThickness="0" materialDesign:TextFieldAssist.DecorationVisibility="Collapsed" Width="160" Height = "25" Text = "{Binding employee_login}"/>
+                    </Border>
+                    <Border Height="25" CornerRadius="12" Background="#FCD6FD" BorderThickness="0" Width="180" VerticalAlignment="Center" UseLayoutRounding="True" Margin="5">
+                        <TextBox x:Name="TextBoxPassword" PreviewTextInput="TextBoxPassword_PreviewTextInput" BorderThickness="0" materialDesign:TextFieldAssist.DecorationVisibility="Collapsed" Width="160" Height = "25" Text = "{Binding employee_password}"/>
+                    </Border>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0 0 30 30">
+            <Border CornerRadius="10" Background="#F614C2" Width="120" Height="24" VerticalAlignment="Center" UseLayoutRounding="True" Margin="5">
+                <Button Foreground="#FCD6FD" Height="24" Content = "Сохранить" x:Name = "ButtonAdd" Click="ButtonAdd_Click" BorderThickness="0" Background="Transparent" VerticalContentAlignment="Center" FontSize="10"/>
+            </Border>
+            <Border CornerRadius="10" Background="#FCD6FD" Width="120" Height="24" VerticalAlignment="Center" UseLayoutRounding="True" Margin="5">
+                <Button Foreground="#F614C2" Height="24" Content="Закрыть" x:Name="ButtonExit" Click="ButtonExit_Click" BorderThickness="0" Background="Transparent" VerticalContentAlignment="Center" FontSize="10"/>
+            </Border>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,130 @@
+C:\Users\kitai\source\repos\Futurum\Futurum\bin\Debug\Futurum.exe.config
+C:\Users\kitai\source\repos\Futurum\Futurum\bin\Debug\Futurum.exe
+C:\Users\kitai\source\repos\Futurum\Futurum\bin\Debug\Futurum.pdb
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Futurum.csproj.AssemblyReference.cache
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\App.g.cs
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Futurum_MarkupCompile.cache
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Futurum_MarkupCompile.lref
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Futurum.g.resources
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Futurum.Properties.Resources.resources
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Futurum.csproj.GenerateResource.cache
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Futurum.csproj.CoreCompileInputs.cache
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Futurum.exe
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Futurum.pdb
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Windows\AuthWindow.g.cs
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Windows\LoadWindow.g.cs
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Windows\MainWindow.g.cs
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Windows\AuthWindow.baml
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Windows\LoadWindow.baml
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Windows\MainWindow.baml
+C:\Users\kitai\source\repos\Futurum\Futurum\bin\Debug\MaterialDesignColors.dll
+C:\Users\kitai\source\repos\Futurum\Futurum\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\kitai\source\repos\Futurum\Futurum\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\kitai\source\repos\Futurum\Futurum\bin\Debug\MaterialDesignColors.pdb
+C:\Users\kitai\source\repos\Futurum\Futurum\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\kitai\source\repos\Futurum\Futurum\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\kitai\source\repos\Futurum\Futurum\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\kitai\source\repos\Futurum\Futurum\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\App.baml
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Futurum.csproj.CopyComplete
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Pages\ComputersPage.g.cs
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Pages\GamesPage.g.cs
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Pages\ShopPage.g.cs
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Pages\SupportPage.g.cs
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Pages\UsersPage.g.cs
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Pages\ComputersPage.baml
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Pages\GamesPage.baml
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Pages\ShopPage.baml
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Pages\SupportPage.baml
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Pages\UsersPage.baml
+C:\Users\kitai\source\repos\Futurum\Futurum\bin\Debug\EntityFramework.dll
+C:\Users\kitai\source\repos\Futurum\Futurum\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kitai\source\repos\Futurum\Futurum\bin\Debug\EntityFramework.xml
+C:\Users\kitai\source\repos\Futurum\Futurum\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kitai\source\repos\Futurum\Futurum\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Futurum_Content.g.cs
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Pages\EditUsersPage.g.cs
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Pages\EditUsersPage.baml
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Windows\BalanceWindow.g.cs
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Windows\BalanceWindow.baml
+C:\Users\kitai\source\repos\Futurum\Futurum\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\kitai\source\repos\Futurum\Futurum\bin\Debug\itextsharp.dll
+C:\Users\kitai\source\repos\Futurum\Futurum\bin\Debug\itextsharp.xml
+C:\Users\kitai\source\repos\Futurum\Futurum\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Pages\EmployeePage.g.cs
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Pages\EmployeePage.baml
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Windows\CustomMessageBox.baml
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Windows\CustomMessageBox.g.cs
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Pages\EditGamesPage.g.cs
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Pages\EditGamesPage.baml
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Pages\EditEmployeePage.g.cs
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Pages\EditProductPage.g.cs
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Pages\ReportPage.g.cs
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Pages\EditEmployeePage.baml
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Pages\EditProductPage.baml
+C:\Users\kitai\source\repos\Futurum\Futurum\obj\Debug\Pages\ReportPage.baml
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Futurum.csproj.AssemblyReference.cache
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Windows\CustomMessageBox.baml
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Pages\ComputersPage.g.cs
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Pages\EditEmployeePage.g.cs
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Pages\EditGamesPage.g.cs
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Pages\EditProductPage.g.cs
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Pages\EditUsersPage.g.cs
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Pages\EmployeePage.g.cs
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Pages\GamesPage.g.cs
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Pages\ReportPage.g.cs
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Pages\ShopPage.g.cs
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Pages\SupportPage.g.cs
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Pages\UsersPage.g.cs
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Windows\AuthWindow.g.cs
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Windows\BalanceWindow.g.cs
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Windows\CustomMessageBox.g.cs
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Windows\LoadWindow.g.cs
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Windows\MainWindow.g.cs
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\App.g.cs
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Futurum_Content.g.cs
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Futurum_MarkupCompile.cache
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Futurum_MarkupCompile.lref
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Futurum.exe
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Futurum.pdb
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\bin\Debug\Futurum.exe.config
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\bin\Debug\Futurum.exe
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\bin\Debug\Futurum.pdb
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\bin\Debug\EntityFramework.dll
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\bin\Debug\itextsharp.dll
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\bin\Debug\MaterialDesignColors.dll
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\bin\Debug\EntityFramework.xml
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\bin\Debug\itextsharp.xml
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\bin\Debug\MaterialDesignColors.pdb
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\App.baml
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Pages\ComputersPage.baml
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Pages\EditEmployeePage.baml
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Pages\EditGamesPage.baml
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Pages\EditProductPage.baml
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Pages\EditUsersPage.baml
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Pages\EmployeePage.baml
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Pages\GamesPage.baml
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Pages\ReportPage.baml
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Pages\ShopPage.baml
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Pages\SupportPage.baml
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Pages\UsersPage.baml
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Windows\AuthWindow.baml
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Windows\BalanceWindow.baml
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Windows\LoadWindow.baml
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Windows\MainWindow.baml
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Futurum.g.resources
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Futurum.Properties.Resources.resources
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Futurum.csproj.GenerateResource.cache
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Futurum.csproj.CoreCompileInputs.cache
+C:\Users\mamok\OneDrive\Рабочий стол\Курсовая работа 4 курс\Курсач\Futurum\Futurum\obj\Debug\Futurum.csproj.CopyComplete

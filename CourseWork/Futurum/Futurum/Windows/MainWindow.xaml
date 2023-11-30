@@ -1,0 +1,35 @@
+﻿<Window x:Class="Futurum.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Futurum"
+        mc:Ignorable="d"
+        Title="Futurum" MinHeight="600" MinWidth="1000" MaxHeight="600" MaxWidth="1000"
+        WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded"
+        FontFamily="Montserrat Alternates">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Column="0" Background="#11103A">
+            <StackPanel Height="auto">
+                <Image Source="/Resources/futurum.png" Width="130"/>
+                <StackPanel Margin="20 0 0 0">
+                    <TextBlock Text="Компьютеры" x:Name="TextBlockComputersPage" MouseDown="TextBlockComputersPage_MouseDown" FontSize="13" Foreground="#FFD0EA" Margin="0 0 0 15"/>
+                    <TextBlock Text="Пользователи" x:Name="TextBlockUSersPage" MouseDown="TextBlockUSersPage_MouseDown" FontSize="13" Foreground="#FFD0EA" Margin="0 0 0 15"/>
+                    <TextBlock Text="Сотрудники" x:Name="TextBlockEmployeePage" MouseDown="TextBlockEmployeePage_MouseDown" FontSize="13" Foreground="#FFD0EA" Margin="0 0 0 15"/>
+                    <TextBlock Text="Магазин" x:Name="TextBlockShopPage" MouseDown="TextBlockShopPage_MouseDown" FontSize="13" Foreground="#FFD0EA" Margin="0 0 0 15"/>
+                    <TextBlock Text="Игры" x:Name="TextBlockGamesPage" MouseDown="TextBlockGamesPage_MouseDown" FontSize="13" Foreground="#FFD0EA" Margin="0 0 0 15"/>
+                    <TextBlock Text="Поддержка" x:Name="TextBlockSupportPage" MouseDown="TextBlockSupportPage_MouseDown" FontSize="13" Foreground="#FFD0EA" Margin="0 0 0 200"/>
+                    <TextBlock Text="Выход из системы" x:Name="TExtBlockExit" MouseDown="TExtBlockExit_MouseDown" FontSize="13" Foreground="#FA45C3" VerticalAlignment="Bottom"/>
+                </StackPanel>
+            </StackPanel>
+
+        </Border>
+        <Border Grid.Column="1" Background="#17164D"/>
+        <Frame Grid.Column = "1" x:Name="MainFrame" ContentRendered="MainFrame_ContentRendered" NavigationUIVisibility = "Hidden"/>
+    </Grid>
+</Window>

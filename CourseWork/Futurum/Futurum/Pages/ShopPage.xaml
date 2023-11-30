@@ -1,0 +1,98 @@
+﻿<Page x:Class="Futurum.Pages.ShopPage"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:Futurum.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ShopPage"
+      FontFamily="Montserrat Alternates"
+      Loaded="Page_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.ColumnSpan="2" Margin="20 0 0 0" VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Left" >
+                <Border Height="25"  Background="#FFD0EA" CornerRadius="12" Width="150" Margin="0 0 20 0">
+                    <TextBox materialDesign:TextFieldAssist.DecorationVisibility="Collapsed" x:Name="TextBoxSearch" Width="130" BorderThickness="0"/>
+                </Border>
+                <Border Height="25" Background="#FFD0EA" CornerRadius="12" Width="150">
+                    <ComboBox x:Name="ComboBoxProductType" Width="130" SelectedIndex="0" DisplayMemberPath="producttype_name" materialDesign:TextFieldAssist.DecorationVisibility="Collapsed" BorderThickness="0"/>
+                </Border>
+                <TextBlock Text = "Добавить товар" Margin="30 0 0 0" VerticalAlignment="Center" Foreground="#F614C2" x:Name="EditProductTextBlock" MouseDown="EditProductTextBlock_MouseDown"/>
+            </StackPanel>
+
+        <ListView Margin="20 0 0 0" Grid.Column="0" Grid.Row="1" x:Name = "ShopListView" HorizontalAlignment="Left" FontSize = "12" ScrollViewer.VerticalScrollBarVisibility="Hidden" SelectionChanged="ShopListView_SelectionChanged">
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="360"/>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Width="100" Height="190" HorizontalAlignment="Center">
+                        <Border CornerRadius="10" Background="AliceBlue" Width="100" Height="100" Margin="0 0 0 2">
+                            <Image  Width = "90" Height = "90" Source = "{Binding product_photo}"/>
+                        </Border>
+                        <StackPanel Margin="0 5 0 0" Orientation="Horizontal">
+                            <TextBlock FontWeight="SemiBold" Width="80" Text="{Binding product_price, StringFormat={}{0:N0}₽}" Foreground="#FFD0EA" HorizontalAlignment="Left"/>
+                            <TextBlock FontWeight="Light" Text="{Binding product_quantityinstock}" Foreground="#FFD0EA" HorizontalAlignment="Right"/>
+                        </StackPanel>
+                        <TextBlock Margin="4" FontWeight="Regular" TextWrapping="WrapWithOverflow" TextAlignment="Left" Foreground="#FFD0EA" Text="{Binding product_name}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+            <ListView.ContextMenu>
+                <ContextMenu Foreground="#FFD0EA" Background="#11103A">
+                    <MenuItem x:Name="ItemUpdate" Header="Редактировать" Click="ItemUpdate_Click"/>
+                    <MenuItem x:Name="ItemDelete" Header="Удалить" Click="ItemDelete_Click"/>
+                    <MenuItem x:Name="ItemOrder" Header="Добавить в заказ" Click="ItemOrder_Click"/>
+                </ContextMenu>
+            </ListView.ContextMenu>
+        </ListView>
+
+        <ListView Foreground="#FFD0EA" Grid.Column="1" Grid.Row="1" Margin="30" x:Name="SelectedProductsListView">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="200" DisplayMemberBinding="{Binding product_name}">
+                        <GridViewColumn.Header>
+                            <GridViewColumnHeader FontWeight="SemiBold" HorizontalContentAlignment="Center" Content="Продукт" Foreground="#FFD0EA"/>
+                        </GridViewColumn.Header>
+                    </GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding product_price, StringFormat={}{0:N0}}">
+                        <GridViewColumn.Header>
+                            <GridViewColumnHeader FontWeight="SemiBold" Content="Цена" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Foreground="#FFD0EA"/>
+                        </GridViewColumn.Header>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <StackPanel Margin="20" Grid.Row="1" Grid.Column="1" VerticalAlignment="Bottom">
+            <StackPanel Orientation="Horizontal" Margin="30 0 0 0">
+                <TextBlock Text="Способ оплаты" Foreground="#FFD0EA" VerticalAlignment="Center" Margin="0 0 20 0"/>
+                <RadioButton IsChecked="True" x:Name="RadioButtonCash" Content="Наличные" Foreground="#FFD0EA" Margin="5" VerticalAlignment="Center"/>
+                <RadioButton x:Name="RadioButtonCreditCard" Content="Карта" Foreground="#FFD0EA" Margin="5" VerticalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="30">
+                <TextBlock FontSize="20" FontWeight="SemiBold" Text="Сумма: " Foreground="#FA45C3" VerticalAlignment="Center"/>
+                <TextBlock FontSize="20" FontWeight="SemiBold" x:Name="TextBlockTotalMoney" Foreground="#FA45C3"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Border CornerRadius="15" Background="#F614C2" Width="150" Height="30" VerticalAlignment="Center" UseLayoutRounding="True" Margin="5">
+                    <Button Width="130" Foreground="#FCD6FD" Height="24" Content = "Оформить заказ" x:Name="ButtonOrder" Click="ButtonOrder_Click" BorderThickness="0" Background="Transparent" VerticalContentAlignment="Center" FontSize="10"/>
+                </Border>
+                <Border CornerRadius="15" Background="#FCD6FD" Width="150" Height="30" VerticalAlignment="Center" UseLayoutRounding="True" Margin="5">
+                    <Button Width="130" Foreground="#F614C2" Height="24" Content = "Сброс" x:Name="ButtonDefault" Click="ButtonDefault_Click" BorderThickness="0" Background="Transparent" VerticalContentAlignment="Center" FontSize="10"/>
+                </Border>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,40 @@
+﻿<Page x:Class="Futurum.Pages.EditGamesPage"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Futurum.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="EditGamesPage"
+      FontFamily="Montserrat Alternates"
+      Loaded="Page_Loaded">
+
+    <Grid>
+        <StackPanel VerticalAlignment = "Center" HorizontalAlignment = "Center">
+            <StackPanel Orientation = "Horizontal">
+                <TextBlock Text = "Наименование" Margin="5" VerticalAlignment="Center" Foreground="#F614C2"/>
+                <StackPanel Width="200" Margin = "10 0 0 0" VerticalAlignment="Center">
+                    <Border Height="25" CornerRadius="12" Background="#FCD6FD" BorderThickness="0" Width="150" VerticalAlignment="Center" UseLayoutRounding="True" Margin="5">
+                        <TextBox x:Name="TextBoxName" Text="{Binding game_name}" BorderThickness="0" materialDesign:TextFieldAssist.DecorationVisibility="Collapsed" Width="130" Height = "25"/>
+                    </Border>
+                </StackPanel>
+                <StackPanel>
+                    <Border Width="84" Height="120" Background="#E0CCD7">
+                        <Image Width="84" Height="120" x:Name="ImageGame" Source="{Binding game_photo}"/>
+                    </Border>
+                    <TextBlock Text="Выбрать фото" Margin="5" Foreground="#F614C2" x:Name="TextBlockPhoto" MouseDown="TextBlockPhoto_MouseDown"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0 0 30 30">
+            <Border CornerRadius="10" Background="#F614C2" Width="120" Height="24" VerticalAlignment="Center" UseLayoutRounding="True" Margin="5">
+                <Button Foreground="#FCD6FD" Height="24" Content = "Сохранить" x:Name = "ButtonAdd" Click="ButtonAdd_Click" BorderThickness="0" Background="Transparent" VerticalContentAlignment="Center" FontSize="10"/>
+            </Border>
+            <Border CornerRadius="10" Background="#FCD6FD" Width="120" Height="24" VerticalAlignment="Center" UseLayoutRounding="True" Margin="5">
+                <Button Foreground="#F614C2" Height="24" Content="Закрыть" x:Name="ButtonExit" Click="ButtonExit_Click" BorderThickness="0" Background="Transparent" VerticalContentAlignment="Center" FontSize="10"/>
+            </Border>
+        </StackPanel>
+    </Grid>
+</Page>
